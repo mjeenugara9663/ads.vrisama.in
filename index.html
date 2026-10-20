@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#0b1028" name="theme-color"/>
+<meta content="Creative ads, mobile-first landing pages and practical enquiry follow-up for Bengaluru businesses. Plan your campaign with Vrisama Ads." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Vrisama Ads | Creative Ads, Landing Pages &amp; Automation" property="og:title"/>
+<meta content="Creative ads, mobile-first landing pages and practical enquiry follow-up for Bengaluru businesses. Plan your campaign with Vrisama Ads." property="og:description"/>
+<title>Vrisama Ads | Creative Ads, Landing Pages &amp; Automation</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      color-scheme: dark;
+      --navy:#0b1028; --navy2:#111635; --navy3:#171c41;
+      --text:#f8f8ff; --sub:#b9c0e1; --muted:#929abf;
+      --violet:#9874ff; --violet-lite:#b7a5ff; --aqua:#58f0c5; --aqua-dark:#073a37;
+      --sun:#ffbc86; --line:rgba(210,215,255,.13); --ease:cubic-bezier(.2,.8,.2,1);
+      --max:1200px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:85px}
+    body{margin:0;background:var(--navy);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::selection{background:#b1a4ff;color:#080b1c}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--aqua);outline-offset:5px}
+    .skip{position:absolute;top:0;left:12px;z-index:100;padding:13px 18px;background:var(--aqua);color:var(--navy);transform:translateY(-120%)}
+    .skip:focus{transform:none}
+    .wrap{width:min(var(--max),calc(100% - 88px));margin:0 auto}
+    .ambient{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden;background:radial-gradient(ellipse 68% 43% at 93% 17%,rgba(78,45,190,.19),transparent 82%),radial-gradient(ellipse 34% 34% at 3% 60%,rgba(12,128,127,.11),transparent 79%),var(--navy)}
+    .ambient::after{content:"";position:absolute;inset:0;opacity:.10;background-image:radial-gradient(circle,rgba(244,247,255,.5) .7px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(90deg,transparent,black 50%,transparent)}
+    .topbar{border-bottom:1px solid var(--line);background:#090e24;position:relative;z-index:25}
+    .topbar .wrap{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#b0bbdf}
+    .topbar b{font-size:10px;color:var(--aqua);font-weight:700}
+    .pulse-dot{display:inline-block;width:7px;height:7px;background:var(--aqua);border-radius:50%;margin-right:10px;box-shadow:0 0 16px rgba(88,240,197,.8);vertical-align:middle}
+    .nav-shell{height:80px;position:relative;z-index:25;border-bottom:1px solid var(--line);background:rgba(10,16,39,.87);backdrop-filter:blur(18px)}
+    .nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:inline-flex;gap:12px;align-items:center;flex-shrink:0}
+    .brand-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#aa82ff 5%,#754de3 48%,#4ef3c2 99%);color:#fff;transform:rotate(-8deg);box-shadow:0 4px 27px rgba(118,76,221,.36);font:900 23px 'Outfit',sans-serif}
+    .brand-title{font:800 24px/.85 'Outfit',sans-serif;letter-spacing:-.085em}
+    .brand-title small{display:block;font:800 9px/1.3 'DM Sans',sans-serif;letter-spacing:.31em;margin:7px 0 0 1px;color:var(--aqua)}
+    .nav-links{display:flex;align-items:center;gap:36px;margin-left:auto;font-weight:700;font-size:13px;color:#ccd3ec}
+    .nav-links>a:not(.nav-cta){transition:color .2s}.nav-links>a:not(.nav-cta):hover{color:var(--aqua)}
+    .nav-cta{display:inline-flex;gap:14px;align-items:center;border:1px solid rgba(105,240,206,.43);color:var(--aqua);border-radius:100px;padding:12px 18px;font-weight:700;transition:background .2s,color .2s}
+    .nav-cta:hover{background:var(--aqua);color:var(--navy)}
+    .menu{display:none;border:1px solid var(--line);color:var(--text);background:transparent;border-radius:10px;width:43px;height:43px;font-size:22px}
+    .hero{position:relative;overflow:hidden;isolation:isolate}
+    .hero::before{content:"";position:absolute;inset:-10% -15% auto 52%;height:700px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(102,64,224,.26),transparent 64%);filter:blur(25px);pointer-events:none;z-index:-1}
+    .hero-layout{min-height:690px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:12px;padding:46px 0 65px}
+    .hero-copy{position:relative;z-index:5;padding:22px 0 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(166,145,255,.26);background:rgba(131,100,218,.11);padding:11px 15px;border-radius:100px;color:#cabaff;text-transform:uppercase;font-size:10px;letter-spacing:.14em;font-weight:800}
+    .eyebrow svg{flex-shrink:0}
+    h1,h2,h3,p{margin-top:0}
+    .hero h1{font:800 clamp(60px,6.3vw,96px)/1.04 'Outfit',sans-serif;letter-spacing:-.075em;margin:28px 0 24px;max-width:720px}
+    .hero h1 .line{display:block;white-space:nowrap}
+    .hero h1 .gradient{display:inline-block;background:linear-gradient(100deg,#a993ff 1%,#e0b9ff 41%,#65f5cd 95%);color:transparent;background-clip:text;-webkit-background-clip:text}
+    .hero-desc{color:#c0c6e0;font-size:17px;line-height:1.75;max-width:535px;margin-bottom:34px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;border-radius:13px;padding:18px 22px;font-size:13px;line-height:1.2;font-weight:800;min-height:56px;transition:transform .2s var(--ease),background .2s,border-color .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-3px)}
+    .btn-main{background:var(--aqua);color:#07352f;box-shadow:0 13px 35px rgba(47,242,179,.14)}
+    .btn-main:hover{background:#a4ffe3;box-shadow:0 16px 38px rgba(47,242,179,.23)}
+    .btn-ghost{border:1px solid rgba(214,222,255,.28);color:var(--text);background:rgba(255,255,255,.025)}
+    .btn-ghost:hover{border-color:var(--violet-lite);background:rgba(150,117,255,.12)}
+    .assurance{display:flex;align-items:center;gap:12px;margin-top:31px;color:#9da7cd;font-size:12px;font-weight:600}
+    .assurance .tick{background:#193b3e;color:var(--aqua);width:23px;height:23px;display:grid;place-items:center;border-radius:100%;font-size:13px}
+    .hero-visual{height:580px;position:relative;display:grid;place-items:center;perspective:950px;isolation:isolate}
+    #sparkCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.82}
+    .visual-aura{position:absolute;width:530px;height:520px;max-width:100%;border-radius:50%;background:radial-gradient(circle,rgba(106,77,224,.27) 0%,rgba(65,56,146,.08) 46%,transparent 71%);filter:blur(10px);pointer-events:none}
+    .world{position:relative;width:min(500px,100%);height:490px;transform-style:preserve-3d;transform:rotateX(var(--mx,-8deg)) rotateY(var(--my,-12deg));transition:transform .24s var(--ease);will-change:transform}
+    .orbit{position:absolute;inset:37px 34px;border:2px solid rgba(144,122,255,.45);border-radius:50%;transform-style:preserve-3d;box-shadow:0 0 27px rgba(132,93,255,.17),inset 0 0 33px rgba(123,94,247,.08);pointer-events:none}
+    .orbit.one{transform:rotateZ(-32deg) rotateY(69deg);animation:orb1 19s linear infinite}
+    .orbit.two{inset:65px 23px;border:2px solid rgba(83,235,202,.44);transform:rotateZ(28deg) rotateX(75deg);animation:orb2 24s linear infinite}
+    .orbit.three{inset:9px 80px;border:1px dashed rgba(224,194,255,.24);transform:rotateZ(51deg) rotateY(71deg);animation:orb3 31s linear infinite}
+    .orbit.one::after,.orbit.two::after{content:"";position:absolute;left:11%;top:12%;width:15px;height:15px;border-radius:50%;background:var(--sun);box-shadow:0 0 22px var(--sun),0 0 34px rgba(255,188,134,.4)}
+    .orbit.two::after{background:var(--aqua);box-shadow:0 0 22px var(--aqua);left:80%;top:24%;width:11px;height:11px}
+    @keyframes orb1{from{transform:rotateZ(-32deg) rotateY(69deg) rotateX(0deg)}to{transform:rotateZ(328deg) rotateY(69deg) rotateX(360deg)}}
+    @keyframes orb2{from{transform:rotateZ(28deg) rotateX(75deg)}to{transform:rotateZ(388deg) rotateX(75deg)}}
+    @keyframes orb3{to{transform:rotateZ(411deg) rotateY(71deg)}}
+    .core-shadow{position:absolute;inset:132px 105px 82px;transform:translateZ(-60px);border-radius:50%;background:rgba(35,12,91,.62);filter:blur(31px)}
+    .core{position:absolute;top:116px;left:113px;width:274px;height:274px;border-radius:36%;background:radial-gradient(circle at 25% 15%,rgba(255,255,255,.6),transparent 30%),linear-gradient(137deg,#b3a1ff 0%,#8b60ed 34%,#5433c2 61%,#205c7a 100%);box-shadow:inset 4px 6px 14px rgba(255,255,255,.22),inset -24px -28px 39px rgba(34,12,92,.56),22px 28px 55px rgba(29,15,79,.5),0 0 90px rgba(124,88,249,.24);transform:translateZ(64px) rotate(-18deg);display:grid;place-items:center;animation:corefloat 6s ease-in-out infinite}
+    .core::before{content:"";inset:16px;position:absolute;border:1px solid rgba(255,255,255,.19);border-radius:34%}
+    .core strong{font:900 148px/.9 'Outfit',sans-serif;letter-spacing:-.15em;color:#f4ebff;text-shadow:3px 8px 11px rgba(15,5,78,.27);transform:translateX(-9px) rotate(18deg)}
+    @keyframes corefloat{0%,100%{transform:translateZ(64px) rotate(-18deg) translateY(0)}50%{transform:translateZ(69px) rotate(-15deg) translateY(-11px)}}
+    .visual-chip{position:absolute;z-index:5;background:rgba(24,31,72,.76);border:1px solid rgba(201,202,255,.26);backdrop-filter:blur(18px);border-radius:17px;box-shadow:0 22px 44px rgba(8,9,35,.27);padding:15px 17px;display:flex;gap:12px;align-items:center;color:#fff;animation:bob 7s ease-in-out infinite}
+    .visual-chip .chip-ic{width:38px;height:38px;flex:0 0 38px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:rgba(88,240,197,.13);color:var(--aqua)}
+    .visual-chip small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#aeb8dc;margin-bottom:5px}
+    .visual-chip strong{font:700 14px 'Outfit',sans-serif;white-space:nowrap}
+    .chip-top{top:45px;left:0;animation-delay:-1s}
+    .chip-bottom{bottom:47px;right:-5px;animation-delay:-3.8s}
+    @keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+    .micro-tag{position:absolute;bottom:40px;left:11px;z-index:2;display:flex;gap:10px;align-items:center;font-size:10px;font-weight:700;letter-spacing:.16em;color:#9ca6c7;text-transform:uppercase}
+    .micro-tag::before{content:"";width:20px;height:1px;background:var(--aqua)}
+    .metric-row{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(14,23,56,.64)}
+    .metric-row .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+    .mini-proof{display:flex;align-items:center;gap:17px;min-height:98px;padding:20px 26px}
+    .mini-proof:not(:last-child){border-right:1px solid var(--line)}
+    .mini-proof:first-child{padding-left:0}.mini-proof:last-child{padding-right:0}
+    .mini-proof .symbol{width:39px;height:39px;border-radius:13px;background:rgba(148,111,249,.13);color:var(--violet-lite);display:grid;place-items:center;font-size:20px;flex-shrink:0}
+    .mini-proof strong{font:700 16px 'Outfit',sans-serif;letter-spacing:-.025em}.mini-proof span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.5}
+    .section{padding:110px 0}.kicker{color:var(--aqua);text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.17em;margin:0 0 19px}
+    .heading{font:800 clamp(41px,5vw,68px)/1.1 'Outfit',sans-serif;letter-spacing:-.065em;margin:0}.heading em{font-style:normal;color:var(--violet-lite)}
+    .section-desc{color:var(--sub);font-size:16px;line-height:1.75;max-width:520px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:44px}.section-head .section-desc{max-width:400px;margin-bottom:5px}
+    .services{background:linear-gradient(180deg,#0d1330,#101633)}
+    .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .service-card{--rx:0deg;--ry:0deg;position:relative;min-height:390px;padding:29px 27px;background:linear-gradient(150deg,#1d2250,#151a3b 64%);border:1px solid rgba(205,194,255,.17);border-radius:24px;overflow:hidden;isolation:isolate;transform:perspective(950px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform .2s ease-out,border .25s,box-shadow .25s}
+    .service-card:hover{border-color:rgba(162,141,255,.65);box-shadow:0 30px 60px rgba(3,7,24,.32)}
+    .service-card::before{content:"";position:absolute;width:240px;height:240px;left:50%;top:-42px;translate:-50% 0;border-radius:50%;background:radial-gradient(circle,rgba(134,102,251,.17),transparent 70%);z-index:-1}
+    .card-n{color:#a6a9d8;font:700 11px 'Outfit',sans-serif;letter-spacing:.17em}
+    .card-art{height:194px;display:grid;place-items:center;perspective:500px}
+    .art-bullseye{width:150px;height:150px;border-radius:50%;border:23px solid #a585ff;box-shadow:inset 0 0 30px rgba(163,136,252,.35),11px 15px 0 -4px #4f3b9e,22px 29px 35px rgba(3,5,21,.4);transform:rotateY(34deg) rotateX(15deg);animation:artDrift 7s ease-in-out infinite}
+    .art-bullseye::after{content:"";display:block;position:relative;top:44px;left:43px;width:12px;height:12px;background:var(--aqua);border-radius:50%;box-shadow:0 0 18px var(--aqua)}
+    .art-window{position:relative;width:165px;height:130px;border:2px solid rgba(178,240,246,.8);border-radius:15px;background:linear-gradient(145deg,rgba(95,248,204,.35),rgba(88,94,242,.08));box-shadow:16px 16px 0 -1px rgba(98,203,196,.13),16px 16px 0 0 rgba(97,235,204,.5),32px 32px 0 -1px rgba(98,203,196,.1),32px 32px 0 rgba(97,235,204,.3);transform:rotateY(-20deg) rotateX(10deg) rotateZ(-8deg);animation:artDrift 6s -2s ease-in-out infinite}
+    .art-window::before{content:"";position:absolute;top:17px;left:16px;right:16px;height:5px;background:linear-gradient(90deg,var(--aqua) 11px,transparent 11px,transparent 21px,var(--aqua) 21px,var(--aqua) 32px,transparent 32px);opacity:.9}
+    .art-window::after{content:"↗";font:800 85px 'Outfit',sans-serif;color:#9effde;position:absolute;top:20px;left:42px}
+    .art-network{position:relative;width:185px;height:174px}
+    .art-network::before,.art-network::after{content:"";position:absolute;inset:29px 19px;border:2px solid rgba(173,140,253,.7);border-radius:50%;transform:rotate(-28deg) scaleY(.4)}
+    .art-network::after{transform:rotate(59deg) scaleY(.5);border-color:rgba(102,234,206,.75)}
+    .art-network .node{position:absolute;left:73px;top:67px;width:42px;height:42px;border-radius:50%;background:radial-gradient(circle at 25% 20%,#fff0b8,var(--sun) 43%,#fa8f7c);box-shadow:0 0 47px rgba(255,188,134,.45);animation:artDrift 4.5s ease-in-out infinite}
+    @keyframes artDrift{0%,100%{translate:0 0}50%{translate:0 -10px}}
+    .service-card h3{font:750 25px/1.2 'Outfit',sans-serif;letter-spacing:-.055em;margin:9px 0 11px}
+    .service-card p{color:#aeb6d7;font-size:13px;line-height:1.75;margin:0;max-width:320px}
+    .service-card .small-arrow{position:absolute;right:28px;bottom:29px;font-size:23px;color:var(--aqua)}
+    .journey{background:#f6f4ff;color:#192143;position:relative;overflow:hidden}
+    .journey::before{content:"";position:absolute;right:-190px;top:-210px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(179,163,255,.18),transparent 65%)}
+    .journey .kicker{color:#6948c4}.journey .heading em{color:#7252e5}.journey .section-desc{color:#6f7492}
+    .journey-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:49px}
+    .journey-step{position:relative;border:1px solid #e0def2;background:#fff;border-radius:19px;padding:27px 23px 30px;min-height:219px;box-shadow:0 15px 35px rgba(81,69,141,.04)}
+    .journey-step .n{font:800 13px 'Outfit',sans-serif;color:#7656e5;background:#eeebff;border-radius:10px;padding:9px 11px;display:inline-block;margin-bottom:32px}
+    .journey-step h3{font:700 22px 'Outfit',sans-serif;letter-spacing:-.055em;margin:0 0 10px}
+    .journey-step p{color:#767b96;font-size:13px;line-height:1.65;margin:0}
+    .journey-step:not(:last-child)::after{content:"→";position:absolute;right:-16px;top:50%;transform:translateY(-50%);z-index:2;display:grid;place-items:center;background:#7050e8;color:white;border-radius:50%;height:31px;width:31px;font-size:17px}
+    .why{background:radial-gradient(circle at 79% 30%,rgba(55,114,122,.1),transparent 50%),#0a1028}
+    .why-layout{display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center}
+    .why-copy .section-desc{margin-top:26px}
+    .why-panel{border:1px solid rgba(179,162,250,.26);border-radius:26px;padding:17px;background:linear-gradient(140deg,#1a2148,#111a37)}
+    .reason{display:flex;align-items:center;gap:19px;padding:20px;border-bottom:1px solid var(--line)}.reason:last-child{border-bottom:0}
+    .reason .reason-icon{flex:0 0 43px;width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:rgba(87,240,196,.13);color:var(--aqua);font-size:21px}
+    .reason strong{font:700 16px 'Outfit',sans-serif}.reason p{color:#9ea9c9;font-size:12px;margin:7px 0 0;line-height:1.5}
+    .contact{background:#171e44;padding:95px 0;position:relative;overflow:hidden}
+    .contact::after{content:"";position:absolute;right:-100px;bottom:-290px;width:650px;height:650px;background:radial-gradient(circle,rgba(136,91,255,.17),transparent 68%);pointer-events:none}
+    .contact-layout{position:relative;z-index:1;display:grid;grid-template-columns:1fr .9fr;gap:80px;align-items:center}
+    .contact .heading{max-width:650px}
+    .contact .section-desc{margin:23px 0 0}
+    .contact-panel{padding:36px;border-radius:24px;border:1px solid rgba(184,190,255,.24);background:rgba(14,19,51,.58)}
+    .contact-panel .btn{width:100%;margin-bottom:12px}
+    .contact-details{display:grid;gap:13px;margin-top:23px;padding-top:23px;border-top:1px solid var(--line)}
+    .contact-details a{color:#cdd3eb;font-size:13px;overflow-wrap:anywhere;display:flex;align-items:center;gap:12px}
+    .contact-details a:hover{color:var(--aqua)}
+    .contact-details span{color:var(--aqua)}
+    footer{background:#090e22;border-top:1px solid var(--line);padding:31px 0;color:#a3abc9}
+    footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
+    footer small{font-size:12px}footer a:hover{color:var(--aqua)}
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}
+    @media(max-width:1080px){.wrap{width:min(var(--max),calc(100% - 50px))}.hero-layout{min-height:620px}.hero h1{font-size:clamp(56px,6vw,73px)}.hero-visual{scale:.88;transform-origin:center}.chip-top{left:-22px}.chip-bottom{right:-21px}.nav-links{gap:21px}.hero-desc{font-size:16px}}
+    @media(max-width:800px){.topbar .wrap{min-height:33px}.nav-shell{height:70px}.menu{display:grid;place-items:center}.nav-links{position:absolute;top:69px;right:0;left:0;background:#101737;display:none;flex-direction:column;align-items:stretch;padding:22px max(25px,6vw) 30px;gap:22px;box-shadow:0 24px 42px rgba(3,7,25,.4)}.nav-links.open{display:flex}.nav-links>a{padding:9px}.nav-links .nav-cta{justify-content:center}.hero-layout{grid-template-columns:1fr;text-align:left;gap:0;padding:60px 0 20px}.hero-copy{text-align:left}.hero h1{font-size:clamp(53px,11vw,82px)}.hero-visual{height:490px;width:min(550px,100%);margin:auto;scale:.88;transform-origin:center}.metric-row .wrap{grid-template-columns:1fr}.mini-proof,.mini-proof:first-child{min-height:76px;padding:16px 0}.mini-proof:not(:last-child){border-right:0;border-bottom:1px solid var(--line)}.section-head{align-items:start;flex-direction:column;gap:17px}.section-desc{margin:0}.service-grid{grid-template-columns:1fr}.service-card{min-height:360px}.card-art{height:185px}.journey-steps{grid-template-columns:repeat(2,1fr)}.journey-step:nth-child(2)::after{display:none}.why-layout,.contact-layout{grid-template-columns:1fr;gap:38px}.section{padding:81px 0}}
+    @media(max-width:520px){.wrap{width:calc(100% - 34px)}.topbar .wrap{font-size:8px;letter-spacing:.07em}.topbar .status{display:none}.brand-title{font-size:22px}.brand-icon{width:36px;height:36px}.hero-layout{padding:49px 0 0}.eyebrow{font-size:9px;letter-spacing:.08em;padding:9px 11px}.hero h1{font-size:clamp(49px,13vw,64px);letter-spacing:-.075em;margin:23px 0 20px}.hero-desc{font-size:15px;margin-bottom:25px}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{width:100%}.assurance{margin-top:24px;font-size:11px}.hero-visual{height:369px;width:100%;margin-top:2px;scale:.65;transform-origin:center center;margin-bottom:-62px}.chip-top{left:12px;top:35px}.chip-bottom{bottom:30px;right:18px}.hero .world{flex-shrink:0}.section{padding:72px 0}.heading{font-size:42px}.service-card{min-height:365px}.journey-steps{grid-template-columns:1fr;margin-top:34px}.journey-step{min-height:170px}.journey-step::after{display:none!important}.contact{padding:72px 0}.contact-panel{padding:22px}.contact .heading{font-size:40px}footer .wrap{align-items:flex-start;flex-direction:column}}
+    @media(max-width:365px){.hero h1{font-size:46px}.hero-visual{margin-left:-13px}.topbar .wrap{font-size:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+    /* Campaign planner teaser: distinct Vrisama purple/mint interface */
+    .scheduler-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 74% 28%,rgba(133,92,255,.18),transparent 55%),#101634}
+    .sched-layout{display:grid;grid-template-columns:.81fr 1.19fr;gap:48px;align-items:center}
+    .sched-copy .heading{font-size:clamp(46px,5.2vw,72px)}
+    .sched-copy .heading em{color:var(--aqua)}
+    .sched-copy p.section-desc{margin:22px 0 28px}
+    .sched-benefits{display:grid;gap:12px;margin:0 0 27px;padding:0;list-style:none;color:#d2dcf8;font-weight:600;font-size:13px}
+    .sched-benefits li::before{content:'✦';color:var(--aqua);margin-right:13px}
+    .sched-micro{font-size:11px;color:#929ecb;margin:15px 0 0;line-height:1.65}
+    .sched-ui{position:relative;isolation:isolate;border:1px solid rgba(172,163,255,.33);border-radius:23px;background:linear-gradient(138deg,#222754,#141b3f);padding:21px;box-shadow:21px 25px 0 rgba(120,79,240,.07),0 37px 70px rgba(0,0,0,.20);transform:perspective(1150px) rotateY(-8deg) rotateX(3deg);transition:transform .6s var(--ease)}
+    .sched-ui:hover{transform:perspective(1150px) rotateY(-2deg) rotateX(0deg)}
+    .sched-ui-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .sched-ui-header strong{font:800 18px 'Outfit';letter-spacing:-.04em}
+    .sched-ui-header span{color:var(--aqua);background:rgba(88,240,197,.1);font-size:9px;border-radius:99px;padding:8px 11px;font-weight:800}
+    .sched-ui-meta{display:flex;gap:9px;margin-bottom:16px}
+    .sched-ui-meta span{display:block;flex:1;border:1px solid rgba(188,190,255,.16);background:#141936;border-radius:10px;padding:11px;font-size:10px;color:#aab2da}
+    .sched-ui-meta b{display:block;font:800 17px 'Outfit';color:white;margin-top:6px}
+    .sched-ui-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+    .sched-ui-grid .week{font-size:9px;color:#929bc4;text-align:center;padding:5px 0}
+    .sched-ui-grid .cell{aspect-ratio:1.25;min-height:37px;display:grid;place-items:center;background:#111831;border:1px solid rgba(178,187,255,.09);font-size:10px;color:#b2bbdf;border-radius:5px;position:relative}
+    .sched-ui-grid .cell.active{background:rgba(140,112,246,.24);border-color:rgba(154,136,255,.4);color:white}
+    .sched-ui-grid .cell.meta{background:rgba(87,235,191,.19);border-color:rgba(87,235,191,.4);color:#9cffe1}
+    .sched-ui-grid .cell.active::after,.sched-ui-grid .cell.meta::after{content:'';width:16px;height:3px;border-radius:99px;background:var(--violet);position:absolute;bottom:4px}
+    .sched-ui-grid .cell.meta::after{background:var(--aqua)}
+    .sched-ui-footer{border-top:1px solid rgba(188,190,255,.16);padding-top:16px;margin-top:19px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;color:#bec8e7}
+    .sched-ui-footer b{color:var(--aqua);letter-spacing:.06em;text-transform:uppercase}
+    @media(max-width:950px){.sched-layout{grid-template-columns:1fr}.sched-ui{max-width:650px;margin:auto;transform:none}.sched-ui:hover{transform:none}}
+    @media(max-width:520px){.sched-ui{padding:12px}.sched-ui-grid .cell{min-height:30px}.sched-ui-meta span{padding:9px 7px}.sched-ui-meta b{font-size:14px}.sched-ui-header strong{font-size:16px}}
+  
+
+/* V4 audit refinements: accessible type, conversion, proof and low-power motion. */
+.topbar .wrap,.topbar b{font-size:12px;letter-spacing:.08em}
+.eyebrow,.kicker,.card-n,.visual-chip small{font-size:12px}
+.btn{font-size:15px}.assurance,.reason p{font-size:14px}
+.service-card p,.journey-step p,.contact-details a{font-size:15px}
+.mini-proof span{font-size:13px}.nav-links{font-size:14px;gap:23px}
+.sched-micro,.micro-tag{font-size:12px}
+footer small{font-size:14px}
+.journey-step p,.journey .section-desc{color:#565c7a}.journey-step .n{color:#5e3fd0}
+.service-card h3{font-weight:700}
+.service-card .small-arrow{display:grid;place-items:center;width:40px;height:40px;bottom:17px;right:19px;border-radius:50%;background:rgba(89,239,194,.09)}
+.service-card .small-arrow:hover,.service-card .small-arrow:focus-visible{background:var(--aqua);color:#052c26}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* Never hide useful content if JS is disabled or errors. */
+.reveal{opacity:1;transform:none;transition:none}
+.reveal.visible{opacity:1;transform:none;animation:arrive .65s var(--ease) both}
+@keyframes arrive{from{opacity:.55;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero.offscreen .orbit,.hero.offscreen .core,.hero.offscreen .visual-chip{animation-play-state:paused}
+.work{background:#0b112b}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.work-card{border:1px solid rgba(197,184,255,.23);border-radius:23px;background:#171d43;overflow:hidden;display:flex;flex-direction:column}
+.work-visual{height:265px;position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 60% 25%,rgba(109,77,219,.39),transparent 60%),#11183b}
+.work-content{padding:29px 32px 32px;display:flex;flex-direction:column;flex:1}
+.work-type{color:#99f1d5;font-size:12px;font-weight:800;letter-spacing:.14em}
+.work-card h3{font:750 27px 'Outfit',sans-serif;margin:16px 0 10px;letter-spacing:-.04em}
+.work-card p{font-size:15px;line-height:1.75;color:#c0c9e4;max-width:510px}
+.work-card a{font-size:15px;font-weight:800;color:var(--aqua);margin-top:auto;padding-top:15px;width:max-content}
+.work-card a:hover{text-decoration:underline;text-underline-offset:5px}
+.mini-ui{width:min(350px,80%);padding:14px;background:linear-gradient(155deg,#222b63,#121c41);border:1px solid rgba(186,179,255,.55);border-radius:16px;box-shadow:22px 28px 35px rgba(0,0,0,.25);transform:perspective(670px) rotateY(-13deg) rotateX(7deg)}
+.mini-ui-head{display:flex;align-items:center;gap:5px;margin-bottom:23px}.mini-ui-head i{width:7px;height:7px;background:var(--violet);border-radius:50%}.mini-ui-head i:nth-child(2){background:var(--sun)}.mini-ui-head i:nth-child(3){background:var(--aqua)}.mini-ui-head span{font-size:10px;font-weight:800;color:#d3daff;margin-left:8px;letter-spacing:.1em}
+.mini-ui-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}.mini-ui-calendar>*{font-size:13px;padding:9px 0;border-radius:4px}.mini-ui-calendar b{font-size:10px;color:#cbd0ee}.mini-ui-calendar span{background:#19234b}.mini-ui-calendar .lit{background:#634cc6;color:white}
+.identity-art{background:radial-gradient(circle at 50% 50%,rgba(73,212,192,.25),transparent 46%),radial-gradient(circle at 45% 35%,rgba(144,91,239,.4),transparent 67%),#111737}
+.identity-v{font:900 136px 'Outfit',sans-serif;position:relative;z-index:2;background:linear-gradient(160deg,#efe8ff,#8f75f0 70%,#68f1cd);background-clip:text;color:transparent;text-shadow:0 10px 23px rgba(93,72,165,.3)}
+.identity-ring{border:2px solid rgba(146,117,255,.42);height:225px;width:225px;border-radius:50%;position:absolute;transform:rotateX(65deg) rotate(-25deg)}.identity-ring.b{border-color:rgba(100,241,203,.45);transform:rotateY(65deg) rotate(15deg)}
+.about{background:#111733}.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.about-promise{background:linear-gradient(150deg,rgba(99,81,194,.3),rgba(34,60,77,.22));padding:37px;border:1px solid rgba(167,152,247,.38);border-radius:22px}
+.about-icon{color:var(--aqua);font-size:44px}.about-promise h3{font:800 29px 'Outfit',sans-serif;margin:21px 0 13px}.about-promise p{font-size:15px;color:var(--sub);line-height:1.75}
+.about-promise a{font-weight:800;color:var(--aqua)}
+.faq{background:#0c122c}.faq-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px}
+.faq-items details{border-bottom:1px solid rgba(178,190,249,.21);padding:22px 0}
+.faq-items summary{list-style:none;cursor:pointer;display:flex;gap:22px;align-items:center;justify-content:space-between;font:700 18px 'Outfit',sans-serif;line-height:1.5}
+.faq-items summary::-webkit-details-marker{display:none}
+.faq-items summary span{font-size:25px;color:var(--aqua);font-weight:400}
+.faq-items details[open] summary span{transform:rotate(45deg)}
+.faq-items details p{font-size:15px;line-height:1.8;color:#c2cce8;margin:14px 0 0}
+.faq-items summary:focus-visible{outline:3px solid var(--aqua);outline-offset:4px}
+.contact-hint{font-size:13px;line-height:1.65;color:#b3c3e7;margin:13px 0 0}
+.footer-links{display:flex;align-items:center;gap:18px;font-size:13px}
+.float-cta{display:none;position:fixed;bottom:calc(14px + env(safe-area-inset-bottom));right:16px;z-index:60;background:var(--aqua);color:#09302c;padding:14px 21px;border-radius:99px;font-size:14px;font-weight:800;box-shadow:0 12px 34px rgba(0,0,0,.36);gap:9px;align-items:center}
+@media(max-width:1050px){.nav-links{gap:14px;font-size:12px}}
+@media(max-width:800px){.work-grid,.about-grid,.faq-layout{grid-template-columns:1fr}.faq-layout,.about-grid{gap:25px}.nav-shell{backdrop-filter:none}.visual-chip{backdrop-filter:none;background:rgba(24,31,72,.94)}.float-cta{display:inline-flex}.contact{padding-bottom:120px}.js .nav-links{display:none}.js .nav-links.open{display:flex}}
+@media(max-width:520px){.work-visual{height:200px}.work-content{padding:25px}.work-card h3{font-size:24px}.topbar .wrap{font-size:11px}.hero h1 .line{white-space:normal}.hero-desc{font-size:16px}.contact-hint{font-size:13px}footer .wrap{gap:15px}}
+@media(max-width:400px){.hero h1{font-size:clamp(48px,13.3vw,66px)}.hero h1 .line{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.reveal.visible{animation:none!important}.orbit,.core,.visual-chip,.art-bullseye,.art-window,.art-network .node{animation:none!important}}
+
+/* Navigation remains accessible if JavaScript is unavailable. */
+@media(max-width:800px){html:not(.js) .nav-shell{height:auto}html:not(.js) .nav{flex-wrap:wrap;padding-top:14px;padding-bottom:14px}html:not(.js) .nav-links{display:flex;position:static;flex-direction:column;align-items:stretch;width:100%;box-shadow:none;padding:15px 0;gap:12px;background:transparent}html:not(.js) .menu{display:none}}
+</style><script>document.documentElement.classList.add('js');</script>
+<link href="https://ads.vrisama.in/" rel="canonical"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/><link href="favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/><meta content="https://ads.vrisama.in/" property="og:url"/><meta content="Vrisama Ads" property="og:site_name"/><meta content="en_IN" property="og:locale"/><meta content="https://ads.vrisama.in/og-image.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Vrisama Ads: creative campaigns, landing pages and automation" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Vrisama Ads | Creative Ads, Landing Pages &amp; Automation" name="twitter:title"/><meta content="Creative ads, mobile-first landing pages and practical enquiry follow-up for Bengaluru businesses. Plan your campaign with Vrisama Ads." name="twitter:description"/><meta content="https://ads.vrisama.in/og-image.jpg" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Vrisama Ads", "url": "https://ads.vrisama.in/", "image": "https://ads.vrisama.in/og-image.jpg", "logo": "https://ads.vrisama.in/apple-touch-icon.png", "telephone": "+91-80886-48210", "email": "Manjunatha.jeenugara@gmail.com", "description": "Creative advertising, landing pages and practical follow-up automation for enquiry-led businesses.", "areaServed": {"@type": "City", "name": "Bengaluru"}}</script></head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div aria-hidden="true" class="ambient"></div>
+<div class="topbar"><div class="wrap"><span>VRISAMA / IDEAS INTO MOMENTUM</span><span class="status">CAMPAIGNS  ·  LANDING PAGES  ·  AUTOMATION</span></div></div>
+<header class="nav-shell"><div class="wrap nav">
+<a aria-label="Vrisama Ads homepage" class="brand" href="#top"><span class="brand-icon">V</span><span class="brand-title">vrisama<small>ADS STUDIO</small></span></a>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation" class="menu" id="menu" type="button">☰</button>
+<nav aria-label="Main navigation" class="nav-links" id="navLinks"><a href="#services">Services</a><a href="scheduler.html">Ad scheduler</a><a href="#journey">Approach</a><a href="#why">Why us</a><a href="#work">Work</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="content">
+<section aria-labelledby="heroTitle" class="hero" id="top"><div class="wrap hero-layout">
+<div class="hero-copy">
+<div class="eyebrow"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="13"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"></path></svg> CREATIVE ADVERTISING + SMART SYSTEMS</div>
+<h1 id="heroTitle"><span class="line">Make them</span><span class="line gradient">stop &amp; look.</span></h1>
+<p class="hero-desc">For Bengaluru businesses that grow through enquiries: we pair standout ads with mobile-friendly landing pages and practical follow-up. Make your next campaign easier to understand—and easier to respond to.</p>
+<div class="hero-actions"><a class="btn btn-main" data-track="whatsapp_click" href="https://wa.me/918088648210?text=Hi%20Vrisama%2C%20I%20would%20like%20to%20discuss%20advertising%20support.%0ABusiness%3A%20%0AWhat%20I%20am%20promoting%3A%20%0AApproximate%20monthly%20ad%20budget%3A%20%0A%28From%20ads.vrisama.in%29" rel="noopener noreferrer" target="_blank">Let's create your campaign <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-ghost" href="#work">Explore our work ↓</a></div>
+<div class="assurance"><span aria-hidden="true" class="tick">✓</span>Designed for clarity. Built for real conversations.</div>
+</div>
+<div aria-hidden="true" class="hero-visual" id="heroVisual">
+<canvas aria-hidden="true" id="sparkCanvas"></canvas><div aria-hidden="true" class="visual-aura"></div>
+<div aria-hidden="true" class="world" id="world"><div class="orbit one"></div><div class="orbit two"></div><div class="orbit three"></div><div class="core-shadow"></div><div class="core"><strong>V</strong></div></div>
+<div aria-hidden="true" class="visual-chip chip-top"><span class="chip-ic">✦</span><span><small>First impression</small><strong>Catch attention</strong></span></div>
+<div aria-hidden="true" class="visual-chip chip-bottom"><span class="chip-ic">↗</span><span><small>Next meaningful step</small><strong>Start a conversation</strong></span></div>
+<div aria-hidden="true" class="micro-tag">An idea, in motion</div>
+</div>
+</div></section>
+<div class="metric-row"><div class="wrap">
+<div class="mini-proof"><div aria-hidden="true" class="symbol">◎</div><div><strong>Start with your audience</strong><span>A message built for real people</span></div></div>
+<div class="mini-proof"><div aria-hidden="true" class="symbol">◇</div><div><strong>Own the customer relationship</strong><span>Your accounts and enquiries remain yours</span></div></div>
+<div class="mini-proof"><div aria-hidden="true" class="symbol">↗</div><div><strong>Improve with evidence</strong><span>Review leads, questions and feedback</span></div></div>
+</div></div>
+<section class="section services" id="services"><div class="wrap">
+<div class="section-head reveal"><div><p class="kicker">01 / WHAT WE CREATE</p><h2 class="heading">Big ideas.<br/><em>Connected execution.</em></h2></div><p class="section-desc">Attention is only the beginning. We help connect your message to the experience that comes next.</p></div>
+<div class="service-grid">
+<article class="service-card reveal"><span class="card-n">01 / ATTRACT</span><div class="card-art"><div aria-hidden="true" class="art-bullseye"></div></div><h3>Creative ads &amp; strategy</h3><p>Audience and message planning, creative concepts, campaign setup guidance, and a review plan for paid ads.</p><a aria-label="Discuss Creative ads &amp; strategy with Vrisama" class="small-arrow" href="#contact">↗</a></article>
+<article class="service-card reveal"><span class="card-n">02 / ENGAGE</span><div class="card-art"><div aria-hidden="true" class="art-window"></div></div><h3>Landing experiences</h3><p>Mobile-first campaign page, a clear offer, frequently asked questions, and WhatsApp or call enquiry links.</p><a aria-label="Discuss Landing experiences with Vrisama" class="small-arrow" href="#contact">↗</a></article>
+<article class="service-card reveal"><span class="card-n">03 / CONNECT</span><div class="card-art"><div aria-hidden="true" class="art-network"><div class="node"></div></div></div><h3>Follow-up automation</h3><p>Lead tracking, team notifications and practical follow-up workflows—designed around your existing tools.</p><a aria-label="Discuss Follow-up automation with Vrisama" class="small-arrow" href="#contact">↗</a></article>
+</div>
+</div></section>
+<section aria-labelledby="schedHeading" class="section scheduler-section" id="scheduler"><div class="wrap sched-layout">
+<div class="sched-copy reveal"><p class="kicker">02 / VRISAMA CAMPAIGN STUDIO</p><h2 class="heading" id="schedHeading">Better timing.<br/><em>Smarter campaigns.</em></h2><p class="section-desc">Plan Facebook, Instagram, Google, YouTube and LinkedIn ad campaigns in one colorful calendar. Keep campaign dates, objectives and budgets organized before launch.</p><ul class="sched-benefits"><li>Choose the platforms your audience uses</li><li>Plan launch windows and daily budgets</li><li>Export your campaign calendar as CSV</li></ul><a class="btn btn-main" href="scheduler.html">Open social ad planner <span aria-hidden="true">↗</span></a><p class="sched-micro">Interactive browser-based planner. Campaign drafts are not submitted to social ad networks.</p></div>
+<div aria-label="Preview of the social advertising campaign planner" class="sched-ui reveal"><div class="sched-ui-header"><strong>Campaign calendar ✦</strong><span>YOUR NEXT MOVE</span></div><div class="sched-ui-meta"><span>PLATFORM SELECTION<b>FB · IG · YT</b></span><span>CAMPAIGN WINDOW<b>PLAN AHEAD</b></span><span>WORKFLOW<b>DRAFT → LAUNCH</b></span></div><div class="sched-ui-grid">
+<span class="week">M</span><span class="week">T</span><span class="week">W</span><span class="week">T</span><span class="week">F</span><span class="week">S</span><span class="week">S</span>
+<span class="cell">1</span><span class="cell">2</span><span class="cell">3</span><span class="cell">4</span><span class="cell">5</span><span class="cell">6</span><span class="cell">7</span>
+<span class="cell">8</span><span class="cell active">9</span><span class="cell active">10</span><span class="cell active">11</span><span class="cell">12</span><span class="cell">13</span><span class="cell">14</span>
+<span class="cell">15</span><span class="cell">16</span><span class="cell meta">17</span><span class="cell meta">18</span><span class="cell meta">19</span><span class="cell">20</span><span class="cell">21</span>
+<span class="cell">22</span><span class="cell">23</span><span class="cell active">24</span><span class="cell active">25</span><span class="cell active">26</span><span class="cell">27</span><span class="cell">28</span>
+</div><div class="sched-ui-footer"><span>Creative → Calendar → Review</span><b>Built to plan ahead ↗</b></div></div>
+</div></section>
+<section aria-labelledby="workTitle" class="section work" id="work"><div class="wrap">
+<div class="section-head reveal"><div><p class="kicker">03 / SELECTED IN-HOUSE WORK</p><h2 class="heading" id="workTitle">Built to show.<br/><em>Built to use.</em></h2></div><p class="section-desc">Real demonstrations from Vrisama. These are our own projects, not client performance claims.</p></div>
+<div class="work-grid">
+<article class="work-card reveal"><div aria-hidden="true" class="work-visual planner-art"><div class="mini-ui"><div class="mini-ui-head"><i></i><i></i><i></i><span>CAMPAIGN STUDIO</span></div><div class="mini-ui-calendar"><b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b><b>S</b><span>8</span><span class="lit">9</span><span class="lit">10</span><span>11</span><span class="lit">12</span><span>13</span><span>14</span></div></div></div>
+<div class="work-content"><span class="work-type">IN-HOUSE TOOL · WORKING PLANNER</span><h3>Vrisama Campaign Studio</h3><p>Plan channel choices, campaign dates and daily budgets; view drafts on a calendar and export them as CSV. This version does not publish to ad accounts.</p><a href="scheduler.html">Try the planner <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="work-card reveal"><div aria-hidden="true" class="work-visual identity-art"><div class="identity-v">V</div><div class="identity-ring a"></div><div class="identity-ring b"></div></div>
+<div class="work-content"><span class="work-type">IN-HOUSE WEBSITE · BRAND EXPLORATION</span><h3>Vrisama Ads digital experience</h3><p>A responsive website concept with 3D-inspired motion, clear campaign messaging and straightforward paths to enquiry. This is our own-brand showcase.</p><a href="#top">See the experience <span aria-hidden="true">↗</span></a></div>
+</article>
+</div>
+</div></section>
+<section class="section journey" id="journey"><div class="wrap">
+<div class="section-head reveal"><div><p class="kicker">04 / THE APPROACH</p><h2 class="heading">Not just views.<br/><em>A path to action.</em></h2></div><p class="section-desc">We apply practical design principles: make the message easy to understand, remove friction, and give people one clear next step.</p></div>
+<div class="journey-steps">
+<article class="journey-step reveal"><span class="n">01</span><h3>Discover</h3><p>Understand the audience, the offer, and what matters to them.</p></article>
+<article class="journey-step reveal"><span class="n">02</span><h3>Attract</h3><p>Use relevant creative and contrast to earn the first look.</p></article>
+<article class="journey-step reveal"><span class="n">03</span><h3>Connect</h3><p>Make the benefit clear and the enquiry simple.</p></article>
+<article class="journey-step reveal"><span class="n">04</span><h3>Improve</h3><p>Review what works and refine using real feedback.</p></article>
+</div>
+</div></section>
+<section class="section why" id="why"><div class="wrap why-layout">
+<div class="why-copy reveal"><p class="kicker">05 / OUR THINKING</p><h2 class="heading">Creativity gets noticed.<br/><em>Clarity earns trust.</em></h2><p class="section-desc">We bring creative marketing and practical technology together. Our focus is on useful business outcomes, clear ownership, and experiences that respect your customers.</p></div>
+<div class="why-panel reveal">
+<div class="reason"><span aria-hidden="true" class="reason-icon">✳</span><div><strong>A distinctive first impression</strong><p>A memorable identity without borrowed layouts or empty noise.</p></div></div>
+<div class="reason"><span aria-hidden="true" class="reason-icon">◈</span><div><strong>Less friction, more clarity</strong><p>One primary action, readable content, and accessible mobile layouts.</p></div></div>
+<div class="reason"><span aria-hidden="true" class="reason-icon">◇</span><div><strong>Trust over pressure</strong><p>No fake countdowns, inflated claims, or misleading urgency.</p></div></div>
+<div class="reason"><span aria-hidden="true" class="reason-icon">↗</span><div><strong>From campaign to conversation</strong><p>Creative, landing experiences, and follow-up can work together.</p></div></div>
+</div>
+</div></section>
+<section class="section about" id="about"><div class="wrap about-grid">
+<div class="reveal"><p class="kicker">06 / ABOUT VRISAMA</p><h2 class="heading">Creative thinking.<br/><em>Practical technology.</em></h2><p class="section-desc">Vrisama is a Bengaluru-based initiative bringing advertising, web experiences and automation together. We prefer a focused plan, a clear next step and transparent project scope over inflated claims.</p></div>
+<div class="about-promise reveal"><span aria-hidden="true" class="about-icon">✧</span><h3>Your brand stays yours.</h3><p>Client ad accounts, approved creative assets and customer relationships remain under the client's ownership. We'll agree the scope, deliverables and access before beginning a project.</p><a href="#contact">Discuss your goals ↗</a></div>
+</div></section>
+<section aria-labelledby="faqTitle" class="section faq" id="faq"><div class="wrap faq-layout">
+<div class="reveal"><p class="kicker">07 / COMMON QUESTIONS</p><h2 class="heading" id="faqTitle">A few things<br/><em>worth knowing.</em></h2><p class="section-desc">We want you to know what you're getting before you commit.</p></div>
+<div class="faq-items reveal">
+<details><summary>Can Vrisama run ads on Facebook and Instagram?<span aria-hidden="true">+</span></summary><p>We can discuss campaign planning, creative preparation and setup support. Live ad activation depends on your approved Meta account, permissions, budget and agreed scope.</p></details>
+<details><summary>Does the Social Ad Scheduler publish ads automatically?<span aria-hidden="true">+</span></summary><p>No. It helps you plan and export drafts in your browser. Publishing paid ads requires a separate connection to each platform's advertising tools.</p></details>
+<details><summary>Who owns the ad accounts and leads?<span aria-hidden="true">+</span></summary><p>You do. We plan the work around access you approve, and client-owned accounts and customer data should stay under client control.</p></details>
+<details><summary>What budget or timeline should I expect?<span aria-hidden="true">+</span></summary><p>That depends on the platforms, number of creatives, landing page needs and follow-up setup. Contact us with your goal and approximate budget for a scoped discussion.</p></details>
+<details><summary>Do you guarantee a number of enquiries?<span aria-hidden="true">+</span></summary><p>No. Campaign results depend on the audience, offer, competition, spending and follow-up. We focus on measurable activity and iterative improvement.</p></details>
+<details><summary>How do I get started?<span aria-hidden="true">+</span></summary><p>Share your business, what you're promoting and an approximate monthly ad budget by WhatsApp or email. We'll discuss what an appropriate first project could include.</p></details>
+</div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-layout">
+<div class="reveal"><p class="kicker">08 / START A CONVERSATION</p><h2 class="heading">Let's turn your idea into <em>momentum.</em></h2><p class="section-desc">Tell us your business, what you're promoting and a rough monthly budget. We'll discuss an appropriate scope before any campaign goes live.</p></div>
+<div class="contact-panel reveal"><a class="btn btn-main" data-track="whatsapp_click" href="https://wa.me/918088648210?text=Hi%20Vrisama%2C%20I%20would%20like%20to%20discuss%20advertising%20support.%0ABusiness%3A%20%0AWhat%20I%20am%20promoting%3A%20%0AApproximate%20monthly%20ad%20budget%3A%20%0A%28From%20ads.vrisama.in%29" rel="noopener noreferrer" target="_blank">Chat on WhatsApp <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-ghost" data-track="email_click" href="mailto:Manjunatha.jeenugara@gmail.com?subject=Advertising%20Enquiry%20-%20Vrisama%20Ads">Send an email <span aria-hidden="true">↗</span></a>
+<div class="contact-details"><a data-track="phone_click" href="tel:+918088648210"><span aria-hidden="true">☎</span> +91 80886 48210</a><a data-track="email_click" href="mailto:Manjunatha.jeenugara@gmail.com"><span aria-hidden="true">✉</span> Manjunatha.jeenugara@gmail.com</a></div>
+<p class="contact-hint">No obligation to purchase. Your message opens WhatsApp or your email app; no contact form is stored on this website.</p></div>
+</div></section>
+</main>
+<footer><div class="wrap"><a class="brand" href="#top"><span class="brand-icon" style="width:30px;height:30px;font-size:17px;border-radius:9px">V</span><span style="font:700 17px 'Outfit',sans-serif;color:#e5e7fa">vrisama <span style="color:var(--aqua)">ads.</span></span></a><small>© <span id="year"></span> Vrisama. Creative systems for growth.</small><small><a href="#top">Back to top ↑</a></small><div class="footer-links"><span>Bengaluru, India</span><a href="privacy.html">Privacy</a><a href="#faq">FAQs</a></div></div></footer>
+<a aria-label="Discuss advertising on WhatsApp (opens in a new tab)" class="float-cta" data-track="whatsapp_sticky" href="https://wa.me/918088648210?text=Hi%20Vrisama%2C%20I%20would%20like%20to%20discuss%20advertising%20support.%0ABusiness%3A%20%0AWhat%20I%20am%20promoting%3A%20%0AApproximate%20monthly%20ad%20budget%3A%20%0A%28From%20ads.vrisama.in%29" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">✳</span> Ask Vrisama on WhatsApp</a><script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('navLinks');
+    menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation'); menu.textContent = open ? '✕' : '☰'; });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); menu.setAttribute('aria-label','Open navigation'); menu.textContent='☰'; }));
+    document.addEventListener('keydown', e => { if(e.key === 'Escape' && nav.classList.contains('open')) { nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); menu.setAttribute('aria-label','Open navigation'); menu.textContent='☰'; menu.focus(); } });
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealed = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !reducedMotion) {
+      const io = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); io.unobserve(entry.target); } }), {threshold:.07});
+      revealed.forEach(el => io.observe(el));
+    } else revealed.forEach(el => el.classList.add('visible'));
+    if (!reducedMotion && window.matchMedia('(pointer:fine)').matches) {
+      const visual = document.getElementById('heroVisual');
+      const world = document.getElementById('world');
+      visual.addEventListener('pointermove', e => {
+        const r=visual.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width-.5; const y=(e.clientY-r.top)/r.height-.5;
+        world.style.setProperty('--mx', `${(-8 - y*14).toFixed(2)}deg`);
+        world.style.setProperty('--my', `${(-12 + x*22).toFixed(2)}deg`);
+      });
+      visual.addEventListener('pointerleave', () => { world.style.setProperty('--mx','-8deg'); world.style.setProperty('--my','-12deg'); });
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('pointermove', e => {
+          const r=card.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width-.5; const y=(e.clientY-r.top)/r.height-.5;
+          card.style.setProperty('--rx', `${(-y*7).toFixed(2)}deg`); card.style.setProperty('--ry', `${(x*7).toFixed(2)}deg`);
+        });
+        card.addEventListener('pointerleave', () => { card.style.setProperty('--rx','0deg'); card.style.setProperty('--ry','0deg'); });
+      });
+    }
+    // Decorative canvas pauses outside viewport and when tab is hidden.
+    const canvas=document.getElementById('sparkCanvas');
+    if (canvas && canvas.getContext) {
+      const ctx=canvas.getContext('2d');let cw=0,ch=0,dpr=1,particles=[],raf=0,inView=true;
+      const resize=()=>{dpr=Math.min(window.devicePixelRatio||1,2);cw=canvas.clientWidth;ch=canvas.clientHeight;canvas.width=Math.max(1,Math.round(cw*dpr));canvas.height=Math.max(1,Math.round(ch*dpr));ctx.setTransform(dpr,0,0,dpr,0,0);particles=Array.from({length:Math.min(65,Math.max(22,Math.round(cw/9)))},(_,i)=>({x:Math.random()*cw,y:Math.random()*ch,r:Math.random()*1.5+.45,v:Math.random()*.32+.1,phase:Math.random()*6.28,color:i%3===0?'#61f1cc':i%3===1?'#be9cfe':'#ffa980'}));};
+      const frame=()=>{ctx.clearRect(0,0,cw,ch);for(const p of particles){ctx.globalAlpha=.22+.45*(.5+.5*Math.sin(p.phase));ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();if(!reducedMotion){p.y-=p.v;p.phase+=.015;if(p.y<0){p.y=ch;p.x=Math.random()*cw;}}}ctx.globalAlpha=1;};
+      const tick=()=>{frame();raf=requestAnimationFrame(tick)};
+      const stop=()=>{if(raf){cancelAnimationFrame(raf);raf=0}};
+      const sync=()=>{if(!reducedMotion && inView && !document.hidden){if(!raf)tick()}else stop()};
+      resize();frame();window.addEventListener('resize',()=>{resize();frame()},{passive:true});
+      document.addEventListener('visibilitychange',sync);
+      if('IntersectionObserver' in window){new IntersectionObserver(([entry])=>{inView=entry.isIntersecting;entry.target.classList.toggle('offscreen',!inView);sync()},{threshold:.01}).observe(document.querySelector('.hero'))}
+      sync();
+    }
+    // Event names are ready for a future consent-aware analytics integration.
+    // No external analytics service is configured or called by this static site.
+    document.querySelectorAll('[data-track]').forEach(el=>el.addEventListener('click',()=>{
+      const name=el.getAttribute('data-track');
+      window.dispatchEvent(new CustomEvent('vrisama:cta',{detail:{name}}));
+    }));
+</script>
+</body>
+</html>
