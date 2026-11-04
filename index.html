@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vrisama — Your AI sales team that never sleeps</title>
-<meta name="description" content="Vrisama is a Bengaluru AI growth studio: ads, instant AI replies, Google Sheets lead tracking and hot-lead alerts on WhatsApp or Telegram.">
+<title>Vrisama — Ad campaigns + AI lead follow-up | Bengaluru</title>
+<meta name="description" content="Vrisama plans, launches and manages ad campaigns on Facebook, Instagram, Google and YouTube, with AI follow-up that replies to every enquiry, tracks leads in Google Sheets and alerts you to hot deals on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -72,7 +72,7 @@ img,video{display:block;max-width:100%}
   padding:7px 14px;border-radius:999px;background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.18)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(52,211,153,.2);animation:pulse 2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(52,211,153,0)}}
-.hero h1{font-size:clamp(40px,5.6vw,68px);font-weight:800;margin:20px 0 18px}
+.hero h1{font-size:clamp(38px,5vw,60px);font-weight:800;margin:20px 0 18px}
 .hero p.lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);max-width:540px}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 26px}
 .trust{display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--muted)}
@@ -225,6 +225,52 @@ footer a:hover{color:var(--violet)}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bub{opacity:1;transform:none}}
 
+/* campaigns */
+.camps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:980px){.camps{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.camps{grid-template-columns:1fr}}
+.camp{padding:26px 24px;transition:transform .3s}
+.camp:hover{transform:translateY(-6px)}
+.camp .ic{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+.camp h3{font-size:19px;margin-bottom:8px}
+.camp p{font-size:14.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font:600 11.5px Poppins;color:var(--ink);padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.8);border:1px solid rgba(124,58,237,.15)}
+.camp .best{display:block;margin-top:12px;font-size:13px;color:var(--violet);font-weight:600}
+
+/* included + report */
+.incl{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}
+@media (max-width:900px){.incl{grid-template-columns:1fr}}
+.list{padding:32px}
+.list ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin-top:22px}
+@media (max-width:560px){.list ul{grid-template-columns:1fr}}
+.list li{display:flex;gap:12px}
+.list li i{flex:none;width:28px;height:28px;border-radius:9px;background:var(--grad);color:#fff;display:grid;place-items:center;font:700 13px Poppins;font-style:normal}
+.list li b{font:600 15px Poppins;color:var(--navy);display:block}
+.list li span{font-size:13.5px;color:var(--muted)}
+.report{padding:28px;display:flex;flex-direction:column}
+.report .rh{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.report .rh b{font:600 16px Poppins;color:var(--navy)}
+.report .rh small{font:600 11px Poppins;letter-spacing:.08em;color:var(--violet);background:rgba(124,58,237,.08);padding:4px 10px;border-radius:999px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kpi{padding:16px;border-radius:16px;background:rgba(255,255,255,.75);border:1px solid var(--edge)}
+.kpi small{font-size:12.5px;color:var(--muted)}
+.kpi b{display:block;font:700 24px Poppins;color:var(--navy);margin-top:2px}
+.kpi em{font-style:normal;font:600 12px Poppins;color:#059669}
+.bars{display:flex;align-items:flex-end;gap:8px;height:110px;margin:20px 0 8px;padding:0 4px}
+.bars div{flex:1;border-radius:8px 8px 4px 4px;background:linear-gradient(180deg,var(--violet-2),var(--violet));opacity:.85;transform-origin:bottom;transform:scaleY(0);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.bars div:nth-child(even){background:linear-gradient(180deg,#FDA4AF,var(--coral))}
+.in .bars div{transform:scaleY(1)}
+.blabels{display:flex;gap:8px;padding:0 4px;font-size:11px;color:var(--muted)}
+.blabels span{flex:1;text-align:center}
+.report .tip{margin-top:auto;padding-top:16px;font-size:13.5px;color:var(--ink);display:flex;gap:10px;align-items:flex-start}
+
+/* edge banner */
+.edge{display:flex;gap:18px;align-items:center;padding:22px 26px;border-radius:var(--r-lg);margin-bottom:46px}
+.edge .ico{width:52px;height:52px;font-size:24px;background:linear-gradient(135deg,#EDE4FF,#FFE1E4)}
+.edge h3{font-size:clamp(20px,2.2vw,26px)}
+.edge p{color:var(--muted);font-size:15px}
+
 .wa-fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45)}
 .wa-fab svg{width:30px;height:30px;fill:#fff}
 </style>
@@ -236,8 +282,9 @@ footer a:hover{color:var(--violet)}
   <div class="bar glass">
     <a href="#top" class="brand"><span class="logo">V</span><span><b>Vrisama</b><small>AI GROWTH STUDIO</small></span></a>
     <ul>
+      <li><a href="#campaigns">Campaigns</a></li>
       <li><a href="#how">How it works</a></li>
-      <li><a href="#alerts">Hot-lead alerts</a></li>
+      <li><a href="#ai">AI follow-up</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="https://ads.vrisama.in/scheduler.html">Ad planner</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -250,12 +297,12 @@ footer a:hover{color:var(--violet)}
 <div class="wrap">
   <section class="hero" style="padding-bottom:20px">
     <div>
-      <span class="eyebrow rv"><span class="dot"></span>AI GROWTH STUDIO · BENGALURU</span>
-      <h1 class="rv">Your AI sales team that <span class="grad-text">never sleeps.</span></h1>
-      <p class="lead rv">We run your ads, reply to every enquiry instantly with AI, track each lead in Google Sheets, and ping you on WhatsApp or Telegram the moment a hot deal lands.</p>
+      <span class="eyebrow rv"><span class="dot"></span>AD CAMPAIGNS + AI FOLLOW-UP · BENGALURU</span>
+      <h1 class="rv">Ads that bring enquiries. <span class="grad-text">AI that never lets one slip.</span></h1>
+      <p class="lead rv">We plan, launch and manage your ad campaigns on Facebook, Instagram, Google and YouTube. Then our AI replies to every enquiry, tracks it in Google Sheets, and alerts you on WhatsApp the moment a hot deal lands.</p>
       <div class="ctas rv">
-        <a class="btn btn-primary wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>Chat on WhatsApp</a>
-        <a class="btn btn-ghost" href="#how">See how it works →</a>
+        <a class="btn btn-primary wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>Plan my campaign</a>
+        <a class="btn btn-ghost" href="#campaigns">Campaigns we run →</a>
       </div>
       <div class="trust rv">
         <span><i>✓</i>You own your ad accounts &amp; data</span>
@@ -273,7 +320,7 @@ footer a:hover{color:var(--violet)}
         </button>
       </div>
       <div class="float glass f1"><span class="ico hot">🔥</span><span><b>Hot lead · Priya</b><small>wants a quote today</small></span></div>
-      <div class="float glass f2"><span class="ico sheet">📊</span><span><b>+1 lead logged</b><small>Google Sheets · just now</small></span></div>
+      <div class="float glass f2"><span class="ico sheet">📣</span><span><b>Campaign live</b><small>Instagram + Google</small></span></div>
     </div>
   </section>
 
@@ -282,24 +329,79 @@ footer a:hover{color:var(--violet)}
     <span>Facebook Ads</span><span>Instagram</span><span>Google Ads</span><span>YouTube</span><span>LinkedIn</span><span>WhatsApp</span><span>Telegram</span><span>Google Sheets</span><span>Excel</span><span>AI replies</span>
   </div></div>
 
+  <!-- CAMPAIGNS WE RUN -->
+  <section id="campaigns">
+    <div class="head center rv">
+      <span class="kicker">Ad campaigns</span>
+      <h2>Campaigns we <span class="grad-text">plan, launch &amp; manage</span></h2>
+      <p>Pick the goal, and we build the right campaign around it, from creatives and targeting to budgets and reporting.</p>
+    </div>
+    <div class="camps">
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#EDE4FF,#FFE1E4)">🎯</div><h3>Lead-generation ads</h3><p>Instant forms and click-to-WhatsApp ads that turn scrollers into enquiries you can call back.</p>
+        <div class="chips"><span>Facebook</span><span>Instagram</span><span>WhatsApp</span></div><span class="best">Best for: services, real estate, clinics, education</span></div>
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#E0F2FE,#EDE4FF)">📍</div><h3>Local business ads</h3><p>Reach people within a few kilometres of your shop or office, at the hours they're most likely to visit.</p>
+        <div class="chips"><span>Facebook</span><span>Instagram</span><span>Google Maps</span></div><span class="best">Best for: stores, restaurants, salons, gyms</span></div>
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#D9F7EA,#E0F2FE)">🔍</div><h3>Google Search ads</h3><p>Show up at the exact moment someone searches for what you sell, and only pay when they click.</p>
+        <div class="chips"><span>Google Search</span><span>Call ads</span></div><span class="best">Best for: high-intent services and urgent needs</span></div>
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#FFE7C7,#FFE1E4)">🎬</div><h3>Video &amp; reel ads</h3><p>Scroll-stopping reels and AI-presenter videos, like the one at the top of this page, built for your brand.</p>
+        <div class="chips"><span>YouTube</span><span>Reels</span><span>Shorts</span></div><span class="best">Best for: launches, brand awareness, explainers</span></div>
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#EDE4FF,#E0F2FE)">🔁</div><h3>Retargeting</h3><p>Gently remind people who visited your page or messaged you but didn't enquire yet.</p>
+        <div class="chips"><span>Meta</span><span>Google Display</span></div><span class="best">Best for: considered purchases, higher ticket sizes</span></div>
+      <div class="camp glass rv"><div class="ic" style="background:linear-gradient(135deg,#FFE1E4,#FFE7C7)">🎉</div><h3>Offers &amp; launch campaigns</h3><p>Festive offers, new branches and product launches, with a clear offer and an honest deadline.</p>
+        <div class="chips"><span>All platforms</span><span>Landing page</span></div><span class="best">Best for: Diwali, Ugadi, openings, new collections</span></div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section id="included" style="padding-top:10px">
+    <div class="incl">
+      <div class="list glass rv">
+        <span class="kicker">Campaign management</span>
+        <h2 style="font-size:clamp(26px,3vw,36px);margin-top:10px">What's included</h2>
+        <ul>
+          <li><i>1</i><div><b>Strategy &amp; audience</b><span>Who to reach, what to say and where</span></div></li>
+          <li><i>2</i><div><b>Creatives</b><span>Posts, carousels, reels and AI-presenter videos</span></div></li>
+          <li><i>3</i><div><b>Setup &amp; tracking</b><span>Campaigns, pixels and conversion tracking</span></div></li>
+          <li><i>4</i><div><b>Budget planning</b><span>Daily budgets that match your goal</span></div></li>
+          <li><i>5</i><div><b>Monitoring &amp; testing</b><span>A/B tests on ads, audiences and offers</span></div></li>
+          <li><i>6</i><div><b>Weekly report</b><span>Plain-language results and next steps</span></div></li>
+        </ul>
+      </div>
+      <div class="report glass rv">
+        <div class="rh"><b>Weekly report</b><small>SAMPLE</small></div>
+        <div class="kpis">
+          <div class="kpi"><small>Leads this week</small><b>48</b><em>▲ 12 vs last week</em></div>
+          <div class="kpi"><small>Cost per lead</small><b>₹186</b><em>▼ ₹24 lower</em></div>
+          <div class="kpi"><small>Hot leads</small><b>11</b><em>alerted on WhatsApp</em></div>
+          <div class="kpi"><small>Replied within 1 min</small><b>100%</b><em>by AI follow-up</em></div>
+        </div>
+        <div class="bars"><div style="height:40%"></div><div style="height:55%"></div><div style="height:48%"></div><div style="height:70%"></div><div style="height:62%"></div><div style="height:85%"></div><div style="height:78%"></div></div>
+        <div class="blabels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+        <p class="tip"><span>💡</span><span><b>Next step:</b> Reels are bringing cheaper leads than static posts. Shift 20% of the budget to reels.</span></p>
+      </div>
+    </div>
+    <p class="note" style="text-align:center">The report shows sample figures for illustration. Your results depend on your offer, audience, budget and follow-up.</p>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section id="how">
     <div class="head center rv">
       <span class="kicker">How it works</span>
-      <h2>From first click to <span class="grad-text">closed deal</span>, on autopilot</h2>
-      <p>Four connected steps. AI handles the repetitive work, so you only step in when a lead is ready to talk.</p>
+      <h2>From first ad to <span class="grad-text">closed deal</span></h2>
+      <p>Four connected steps. We run the campaigns, and AI makes sure no enquiry they bring in goes cold.</p>
     </div>
     <div class="flow">
-      <div class="step glass rv"><div class="num">01</div><h3>AI-powered ads</h3><p>AI helps plan audiences, write ad copy and spin up creative variations for Meta, Google and YouTube.</p><span class="tag">ATTRACT</span></div>
-      <div class="step glass rv"><div class="num">02</div><h3>Instant AI replies</h3><p>Every enquiry gets a friendly, on-brand reply in seconds, day or night, with the right follow-up questions.</p><span class="tag">CONNECT</span></div>
-      <div class="step glass rv"><div class="num">03</div><h3>Auto-tracking in Sheets</h3><p>Each lead is logged to Google Sheets or Excel with source, interest and status. No copy-pasting.</p><span class="tag">ORGANISE</span></div>
-      <div class="step glass rv"><div class="num">04</div><h3>Hot-lead alerts</h3><p>When a lead looks ready to buy, you get an instant WhatsApp or Telegram note with the details.</p><span class="tag">CLOSE</span></div>
+      <div class="step glass rv"><div class="num">01</div><h3>Plan</h3><p>Understand your audience, offer and budget, then choose the right platforms and campaign types.</p><span class="tag">DISCOVER</span></div>
+      <div class="step glass rv"><div class="num">02</div><h3>Launch</h3><p>Creatives, targeting and tracking set up properly, and your campaigns go live on Meta, Google or YouTube.</p><span class="tag">ATTRACT</span></div>
+      <div class="step glass rv"><div class="num">03</div><h3>Follow up with AI</h3><p>Every enquiry gets an instant reply, is logged to Google Sheets, and hot leads are sent to your WhatsApp.</p><span class="tag">CONNECT</span></div>
+      <div class="step glass rv"><div class="num">04</div><h3>Improve</h3><p>Weekly reviews of what's working. We shift budget to the best ads and refine the rest.</p><span class="tag">IMPROVE</span></div>
     </div>
   </section>
 
-  <!-- ALERT SHOWCASE -->
-  <section id="alerts">
-    <div class="split">
+  <!-- AI EDGE + ALERT SHOWCASE -->
+  <section id="ai">
+    <div class="edge glass rv"><span class="ico">⚡</span><div><span class="kicker">Our edge</span><h3>Most agencies stop at the click. We follow up too.</h3><p>Ads bring the enquiries; our AI lead desk makes sure every single one gets answered, tracked and passed to you.</p></div></div>
+    <div class="split" id="alerts">
       <div class="rv">
         <span class="kicker">Hot-lead alerts</span>
         <div class="head" style="margin-bottom:0">
@@ -360,13 +462,13 @@ footer a:hover{color:var(--violet)}
   <section id="services">
     <div class="head rv">
       <span class="kicker">Services</span>
-      <h2>Everything you need to turn ads into <span class="grad-text">enquiries</span></h2>
+      <h2>Everything you need to turn ads into <span class="grad-text">customers</span></h2>
     </div>
     <div class="cards">
-      <div class="card glass rv"><div class="ic" style="background:linear-gradient(135deg,#EDE4FF,#FFE1E4)">🎯</div><h3>AI ads &amp; strategy</h3><p>Audience and message planning, creative concepts and campaign setup guidance.</p>
-        <ul><li>AI-assisted copy &amp; creative variations</li><li>Meta, Google, YouTube, LinkedIn</li><li>Review plan to improve what works</li></ul></div>
-      <div class="card glass rv"><div class="ic" style="background:linear-gradient(135deg,#E0F2FE,#EDE4FF)">📱</div><h3>Landing experiences</h3><p>Mobile-first campaign pages with a clear offer, FAQs and one-tap enquiry.</p>
-        <ul><li>Fast, glassy, on-brand pages</li><li>WhatsApp &amp; call buttons</li><li>AI ad-presenter videos</li></ul></div>
+      <div class="card glass rv"><div class="ic" style="background:linear-gradient(135deg,#EDE4FF,#FFE1E4)">📣</div><h3>Ad campaign management</h3><p>End-to-end paid campaigns: planning, setup, daily monitoring and weekly reporting.</p>
+        <ul><li>Facebook, Instagram, Google, YouTube, LinkedIn</li><li>Targeting, budgets &amp; A/B testing</li><li>Weekly report in plain language</li></ul></div>
+      <div class="card glass rv"><div class="ic" style="background:linear-gradient(135deg,#E0F2FE,#EDE4FF)">🎨</div><h3>Creatives &amp; landing pages</h3><p>Ad creatives and mobile-first campaign pages with a clear offer and one-tap enquiry.</p>
+        <ul><li>Posts, carousels &amp; reels</li><li>AI ad-presenter videos</li><li>Fast pages with WhatsApp &amp; call buttons</li></ul></div>
       <div class="card glass rv"><div class="ic" style="background:linear-gradient(135deg,#D9F7EA,#E0F2FE)">🤖</div><h3>AI lead desk</h3><p>Instant replies, lead tracking and follow-ups, built around the tools you already use.</p>
         <ul><li>AI replies to every enquiry</li><li>Google Sheets / Excel tracking</li><li>Hot-lead alerts on WhatsApp or Telegram</li></ul></div>
     </div>
@@ -404,6 +506,8 @@ footer a:hover{color:var(--violet)}
   <section id="faq">
     <div class="head center rv"><span class="kicker">FAQ</span><h2>Questions, answered</h2></div>
     <div class="faq">
+      <details class="glass rv"><summary>Do you manage the campaigns, or just advise?</summary><p>Either. We can fully manage your campaigns (setup, creatives, monitoring and weekly reports) or support your team with planning and creatives while you run them. Live activation depends on your approved ad accounts, permissions, budget and agreed scope.</p></details>
+      <details class="glass rv"><summary>Which platforms do you run ads on?</summary><p>Facebook, Instagram, Google Search, YouTube and LinkedIn. We'll suggest the mix that suits your audience and budget rather than spreading you thin.</p></details>
       <details class="glass rv"><summary>What does the AI actually do?</summary><p>It helps draft ad copy and creative ideas, replies to new enquiries with on-brand messages, logs each lead to your sheet, scores how ready they are, and alerts you when a lead looks hot. You stay in charge of pricing, promises and closing.</p></details>
       <details class="glass rv"><summary>Can alerts come on WhatsApp or Telegram?</summary><p>Yes. We set up alerts on the channel you prefer. WhatsApp automation depends on your WhatsApp Business setup and permissions, which we scope together.</p></details>
       <details class="glass rv"><summary>Can Vrisama run ads on Facebook and Instagram?</summary><p>We can plan campaigns, prepare creative and support setup. Live activation depends on your approved Meta account, permissions, budget and agreed scope.</p></details>
@@ -417,7 +521,7 @@ footer a:hover{color:var(--violet)}
   <section id="contact">
     <div class="cta glass rv">
       <span class="kicker">Let's grow together</span>
-      <h2 style="margin-top:12px">Ready for a sales team that <span class="grad-text">never sleeps?</span></h2>
+      <h2 style="margin-top:12px">Ready to run ads that <span class="grad-text">actually get answered?</span></h2>
       <p>Tell us your business, what you're promoting and your approximate monthly ad budget. We'll suggest a simple first step.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
         <a class="btn btn-primary wa" href="#">Chat on WhatsApp</a>
@@ -432,7 +536,7 @@ footer a:hover{color:var(--violet)}
 <footer class="wrap">
   <div class="row">
     <a href="#top" class="brand"><span class="logo" style="width:32px;height:32px;font-size:16px">V</span><b style="font-size:17px">Vrisama</b></a>
-    <span>© Vrisama. AI growth systems for businesses that grow through enquiries.</span>
+    <span>© Vrisama. Ad campaigns and AI follow-up for businesses that grow through enquiries.</span>
     <span><a href="https://ads.vrisama.in/privacy.html">Privacy</a> · <a href="#faq">FAQs</a></span>
   </div>
 </footer>
@@ -441,7 +545,7 @@ footer a:hover{color:var(--violet)}
 
 <script>
 // WhatsApp links
-const WA='https://wa.me/918088648210?text='+encodeURIComponent("Hi Vrisama, I'd like to know about your AI ads & lead automation.\nBusiness: \nWhat I'm promoting: \nApproximate monthly ad budget: \n(From ads.vrisama.in)");
+const WA='https://wa.me/918088648210?text='+encodeURIComponent("Hi Vrisama, I'd like to discuss an ad campaign.\nBusiness: \nWhat I'm promoting: \nApproximate monthly ad budget: \n(From ads.vrisama.in)");
 document.querySelectorAll('a.wa').forEach(a=>{a.href=WA;a.target='_blank';a.rel='noopener'});
 
 // scroll reveal
