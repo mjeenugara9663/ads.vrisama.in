@@ -74,13 +74,24 @@ svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stro
   .hero::after{background:linear-gradient(180deg,rgba(11,10,20,.35) 0%,rgba(11,10,20,0) 25%,rgba(11,10,20,.25) 45%,rgba(11,10,20,.92) 78%,var(--ink))}
   .hero .inner{grid-template-columns:1fr;padding:0 0 70px}
   .frame{display:none}
-  .hero h1{font-size:44px;margin:14px 0 14px}
-  .hero p{font-size:16px}
-  .hero .ctas{margin-top:24px}
+  .hero{background:#0B0A14 url(vrisama-ad-poster.jpg) 50% 72px/100% auto no-repeat}
+  .hero::after{background:linear-gradient(180deg,rgba(11,10,20,.3) 0%,rgba(11,10,20,0) 14%,rgba(11,10,20,0) 58%,rgba(11,10,20,.82) 74%,var(--ink) 86%)}
+  .hero .inner{padding:0 0 26px}
+  .hero .eyebrow{display:none}
+  .hero h1{font-size:clamp(27px,7.6vw,31px);line-height:1.08;letter-spacing:-.015em;margin:0 0 8px}
+  .hero p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.75)}
+  .hero p .long{display:none}
+  .hero p .short{display:inline}
+  .hero .ctas{margin-top:16px}
+  .hero .ctas .btn{padding:13px 22px}
+  .hero .ctas .btn-line{display:none}
+  .hero .ctas .btn-light{width:100%;justify-content:center}
+  h2{letter-spacing:-.022em}
   .cue{display:none}
-  .sound.m{display:grid;top:auto;bottom:auto;right:16px;top:calc(72px + 40%)}
+  .sound.m{display:grid;bottom:auto;right:14px;top:86px}
 }
 .sound.m{display:none}
+.hero p .short{display:none}
 @media (max-width:820px){.sound.m{display:grid}}
 
 /* ---------------- STATEMENT ---------------- */
@@ -290,7 +301,7 @@ footer a:hover{color:#fff}
       <div>
         <span class="eyebrow rv">Ad campaigns · AI follow-up · Bengaluru</span>
         <h1 class="rv">Ads that bring enquiries.<span>AI that never lets one slip.</span></h1>
-        <p class="rv">We plan, launch and manage your campaigns on Facebook, Instagram, Google and YouTube, then answer, track and hand over every lead they bring.</p>
+        <p class="rv"><span class="long">We plan, launch and manage your campaigns on Facebook, Instagram, Google and YouTube, then answer, track and hand over every lead they bring.</span><span class="short">Campaigns on Meta, Google and YouTube, with AI follow-up on every lead.</span></p>
         <div class="ctas rv">
           <a class="btn btn-light wa" href="#">Plan my campaign <svg class="i arr"><use href="#arr"/></svg></a>
           <a class="btn btn-line" href="#campaigns">Explore campaigns</a>
@@ -489,7 +500,8 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
 
 // reveal with stagger
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14,rootMargin:'0px 0px -6% 0px'});
-$$('.rv').forEach(el=>{const sib=[...el.parentElement.children].filter(c=>c.classList.contains('rv'));el.style.transitionDelay=Math.min(sib.indexOf(el),5)*90+'ms';io.observe(el)});
+$$('.hero .rv').forEach((el,i)=>{el.style.transitionDelay=i*110+'ms';requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('in')))});
+$$('.rv:not(.hero .rv)').forEach(el=>{const sib=[...el.parentElement.children].filter(c=>c.classList.contains('rv'));el.style.transitionDelay=Math.min(sib.indexOf(el),5)*90+'ms';io.observe(el)});
 
 // sound buttons (one video with sound at a time)
 $$('.sound').forEach(b=>b.addEventListener('click',()=>{
@@ -532,6 +544,9 @@ new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();[...ch
 // new lead drops into the sheet
 let added=false;function addLead(){if(added)return;added=true;setTimeout(()=>{const tr=document.createElement('tr');tr.className='new';
   tr.innerHTML='<td>Kiran M.</td><td>Instagram</td><td><span class="st hot">Hot</span></td><td>Owner alerted</td>';$('#rows').prepend(tr)},700)}
+// if the phone blocks autoplay (e.g. Low Power Mode), start on first touch/scroll
+const kick=()=>{$$('video').forEach(v=>{if(v.paused)v.play().catch(()=>{})})};
+['touchstart','scroll','click'].forEach(ev=>addEventListener(ev,kick,{once:true,passive:true}));
 </script>
 </body>
 </html>
